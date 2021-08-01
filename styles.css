@@ -1,0 +1,17 @@
+td {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(139,69,19);
+}
+
+#hero {
+    color: rgb(0,191,255);
+}
+
+.orc {
+    color: rgb(191,255,0);
+}
+
+.treasure {
+    color: #D4AF37;
+}
