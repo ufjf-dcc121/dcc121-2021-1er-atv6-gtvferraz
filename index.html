@@ -454,6 +454,9 @@
     <script>
         const celulas = document.querySelectorAll('td');
         for(let i=0; i<celulas.length; i++) {
+            celulas[i].addEventListener('click', event => {
+                console.log(event.target.className);
+            })
             if(!celulas[i].className)
                 celulas[i].className = "wall";
         }
