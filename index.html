@@ -455,7 +455,20 @@
         const celulas = document.querySelectorAll('td');
         for(let i=0; i<celulas.length; i++) {
             celulas[i].addEventListener('click', event => {
-                console.log(event.target.className);
+                switch(event.target.className) {
+                    case 'wall': 
+                        event.target.className = ''
+                        break;
+                    case '': 
+                        event.target.className = 'orc'
+                        break;
+                    case 'orc': 
+                        event.target.className = 'treasure'
+                        break;
+                    case 'treasure': 
+                        event.target.className = 'wall'
+                        break;
+                }
             })
             if(!celulas[i].className)
                 celulas[i].className = "wall";
