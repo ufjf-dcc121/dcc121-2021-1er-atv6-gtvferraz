@@ -454,7 +454,8 @@
     <script>
         const celulas = document.querySelectorAll('td');
         for(let i=0; i<celulas.length; i++) {
-            celulas[i].className = "wall";
+            if(!celulas[i].className)
+                celulas[i].className = "wall";
         }
     </script>
 </body>
