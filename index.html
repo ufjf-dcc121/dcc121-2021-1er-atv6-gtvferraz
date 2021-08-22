@@ -459,15 +459,19 @@
                 switch(event.target.className) {
                     case 'wall': 
                         event.target.className = ''
+                        event.target.innerHTML = '';
                         break;
                     case '': 
                         event.target.className = 'orc'
+                        event.target.innerHTML = 'O';
                         break;
                     case 'orc': 
                         event.target.className = 'treasure'
+                        event.target.innerHTML = 'D';
                         break;
                     case 'treasure': 
                         event.target.className = 'wall'
+                        event.target.innerHTML = '';
                         break;
                 }
                 console.log(event.target.className);
